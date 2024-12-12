@@ -38,3 +38,61 @@ function myFunction(a, b) {
   Expected
   false 
   */
+
+  // 3.Write a function that takes a value as argument. Return the type of the value.
+function myFunction(a) {
+  return typeof a;
+}
+/*Test Cases:
+  Attempted: 276535
+  Solved: 125649
+  myFunction(1)
+  Expected
+  'number'
+  myFunction(false)
+  Expected
+  'boolean'
+  myFunction({})
+  Expected
+  'object'
+  myFunction(null)
+  Expected
+  'object'
+  myFunction('string')
+  Expected
+  'string'
+  myFunction(['array'])
+  Expected
+  'object'*/
+//  4.Write a function that takes a string (a) and a number (n) as argument. Return the nth character of 'a'.
+function myFunction(a, n) {
+  return a.charAt(n - 1);
+}
+/*Test Cases:
+Attempted: 607983
+Solved: 98833
+myFunction('abcd',1)
+Expected
+'a'
+myFunction('zyxbwpl',5)
+Expected
+'w'
+myFunction('gfedcba',3)
+Expected
+'e'*/
+// 5.Write a function that takes a string (a) as argument. Remove the first 3 characters of a. Return the result
+function myFunction(a) {
+  return a.slice(3);
+}
+/*Test Cases:
+Attempted: 265453
+Solved: 83240
+myFunction('abcdefg')
+Expected
+'defg'
+myFunction('1234')
+Expected
+'4'
+myFunction('fgedcba')
+Expected
+'dcba'*/
