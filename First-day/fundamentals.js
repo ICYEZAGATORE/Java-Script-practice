@@ -175,3 +175,78 @@ Expected
 myFunction('fgedcba')
 Expected
 'fged'*/
+// 11.Write a function that takes two numbers (a and b) as argument. Return b percent of a
+
+function myFunction(a, b) {
+  return (b / 100) * a;
+}
+/*Test Cases:
+Attempted: 216714
+Solved: 55502
+myFunction(100,50)
+Expected
+50
+myFunction(10,1)
+Expected
+0.1
+myFunction(500,25)
+Expected
+125*/
+// 12.Write a function that takes 6 values (a,b,c,d,e,f) as arguments. Sum a and b. Then substract by c. Then multiply by d and divide by e. Finally raise to the power of f and return the result. Hint: mind the order.
+function myFunction(a, b, c, d, e, f) {
+  return Math.pow(((a + b - c) * d) / e, f);
+}
+/*Test Cases:
+Attempted: 139135
+Solved: 44925
+myFunction(6,5,4,3,2,1)
+Expected
+10.5
+myFunction(6,2,1,4,2,3)
+Expected
+2744
+myFunction(2,3,6,4,2,3)
+Expected
+-8*/
+// 13.Write a function that takes two strings (a and b) as arguments. If a contains b, append b to the beginning of a. If not, append it to the end. Return the concatenation
+function myFunction(a, b) {
+  if (a.includes(b)) {
+    return b + a;
+  } else {
+    return a + b;
+  }
+}
+/*Test Cases:
+Attempted: 150244
+Solved: 46077
+myFunction('cheese', 'cake')
+Expected
+'cheesecake'
+myFunction('lips', 's')
+Expected
+'slips'
+myFunction('Java', 'script')
+Expected
+'Javascript'
+myFunction(' think, therefore I am', 'I')
+Expected
+'I think, therefore I am'*/
+// 14.Write a function that takes a number as argument. If the number is even, return true. Otherwise, return false
+function myFunction(a) {
+  return a % 2 === 0;
+}
+/*Test Cases:
+Attempted: 106485
+Solved: 48887
+myFunction(10)
+Expected
+true
+myFunction(-4)
+Expected
+true
+myFunction(5)
+Expected
+false
+myFunction(-111)
+Expected
+false*/
