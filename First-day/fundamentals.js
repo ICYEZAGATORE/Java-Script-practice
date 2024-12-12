@@ -96,3 +96,82 @@ Expected
 myFunction('fgedcba')
 Expected
 'dcba'*/
+// 6.Write a function that takes a string as argument. Extract the last 3 characters from the string. Return the result
+function myFunction(str) {
+  return str.slice(-3);
+}
+/*Test Cases:
+Attempted: 260165
+Solved: 90349
+myFunction('abcdefg')
+Expected
+'efg'
+myFunction('1234')
+Expected
+'234'
+myFunction('fgedcba')
+Expected
+'cba'*/
+// 7.Write a function that takes a string (a) as argument. Get the first 3 characters of a. Return the result
+function myFunction(a) {
+  return a.slice(0, 3);
+}
+/*Test Cases:
+Attempted: 197111
+Solved: 78049
+myFunction('abcdefg')
+Expected
+'abc'
+myFunction('1234')
+Expected
+'123'
+myFunction('fgedcba')
+Expected
+'fge'*/
+// 8. Write a function that takes a string as argument. The string contains the substring 'is'. Return the index of 'is'.
+function myFunction(a) {
+  return a.indexOf("is");
+}
+/*Test Cases:
+Attempted: 110704
+Solved: 49685
+myFunction("praise")
+Expected
+3
+myFunction("risky")
+Expected
+1
+myFunction("paris")
+Expected
+3*/
+// 9.Write a function that takes a string (a) as argument. Extract the first half a. Return the result
+function myFunction(a) {
+  const halfLength = Math.floor(a.length / 2);
+  return a.slice(0, halfLength);
+}
+/*Test Cases:
+Attempted: 184932
+Solved: 61656
+myFunction('abcdefgh')
+Expected
+'abcd'
+myFunction('1234')
+Expected
+'12'
+myFunction('gedcba')
+Expected
+'ged'*/
+// 10.Write a function that takes a string (a) as argument. Remove the last 3 characters of a. Return the result
+
+function myFunction(a) {
+  return a.slice(0, -3);
+}
+/*myFunction('abcdefg')
+Expected
+'abcd'
+myFunction('1234')
+Expected
+'1'
+myFunction('fgedcba')
+Expected
+'fged'*/
